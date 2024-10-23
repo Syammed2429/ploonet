@@ -4,8 +4,8 @@ import icon from "@/public/icons/ploonet-icon.svg";
 import globeIcon from "@/public/icons/globe-icon.svg";
 const NavbarComponent = () => {
   return (
-    <div className="fixed top-0 w-full bg-black backdrop-blur-sm z-50 ">
-      <div className="flex items-center justify-around py-10">
+    <nav className="fixed top-0 w-full bg-black backdrop-blur-sm z-50 ">
+      <div className="flex items-center justify-around py-7">
         <Image src={icon} alt="icon" />
         <ol className="flex items-center gap-20">
           <li>스튜디오</li>
@@ -21,7 +21,7 @@ const NavbarComponent = () => {
           <Image src={globeIcon} alt="globeIcon" />
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
