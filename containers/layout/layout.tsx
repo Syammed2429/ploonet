@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import HeroSection from "@/components/hero/hero";
 import NavbarComponent from "@/components/navbar/navbar";
@@ -14,29 +14,29 @@ const HomeLayout = () => {
       <NavbarComponent />
       <HeroSection />
       <div className="max-w-[900px] mx-auto py-40">
-        <motion.div 
-          initial={{ opacity: 0, x: -200 }} // Animate CirclesContainer from the left
-          whileInView={{ opacity: 1, x: 0 }} 
-          transition={{ duration: 0.5, delay: 0.3 }} // Adjust delay as needed
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <CirclesContainer />
         </motion.div>
       </div>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: 300 }} // Animate PreviousWorkContainer from the right
-        whileInView={{ opacity: 1, x: 0 }} 
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }} // Adjust delay as needed
       >
         <PreviousWorkContainer />
       </motion.div>
-      <div className="max-w-[900px] mx-auto py-40">
-        <motion.div 
+      <div className="mx-auto max-w-[1300px] px-8 pb-4 pt-8 2xl:max-w-[1440px] 2xl:pb-12 3xl:max-w-[1600px]  py-40 h-full">
+        <motion.div
           initial={{ opacity: 0, x: -200 }} // Animate CirclesContainer from the left
-          whileInView={{ opacity: 1, x: 0 }} 
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }} // Adjust delay as needed
         >
           {/* <CirclesContainer /> */}
-      <MakingProcessContainer/>
+          <MakingProcessContainer />
         </motion.div>
       </div>
     </main>
