@@ -6,6 +6,7 @@ import React from "react";
 import CirclesContainer from "../circles/circles-container";
 import PreviousWorkContainer from "../previous-work/previous-work-container";
 import { motion } from "framer-motion";
+import MakingProcessContainer from "../making-process/making-process-container";
 
 const HomeLayout = () => {
   return (
@@ -28,6 +29,16 @@ const HomeLayout = () => {
       >
         <PreviousWorkContainer />
       </motion.div>
+      <div className="max-w-[900px] mx-auto py-40">
+        <motion.div 
+          initial={{ opacity: 0, x: -200 }} // Animate CirclesContainer from the left
+          whileInView={{ opacity: 1, x: 0 }} 
+          transition={{ duration: 0.5, delay: 0.3 }} // Adjust delay as needed
+        >
+          {/* <CirclesContainer /> */}
+      <MakingProcessContainer/>
+        </motion.div>
+      </div>
     </main>
   );
 };
