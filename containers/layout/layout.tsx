@@ -11,10 +11,10 @@ import ContactContainer from "../contact/contact-container";
 
 const HomeLayout = () => {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen">
       <NavbarComponent />
       <HeroSection />
-      <div className="max-w-[900px] mx-auto py-40">
+      <div className="max-w-[900px] mx-auto py-10 md:py-20">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,13 +24,13 @@ const HomeLayout = () => {
         </motion.div>
       </div>
       <motion.div
-        initial={{ opacity: 0, y: 100 }} // Animate PreviousWorkContainer from the right
+        initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }} // Adjust delay as needed
+        transition={{ duration: 0.5, delay: 0.4 }}
       >
         <PreviousWorkContainer />
       </motion.div>
-      <div className="mx-auto max-w-[1300px] px-8 pb-4 pt-8 2xl:max-w-[1440px] 2xl:pb-12 3xl:max-w-[1600px]  py-40 h-full">
+      <div className="mx-auto max-w-[1300px] px-4 md:px-8 pb-4 pt-8">
         <motion.div
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -39,7 +39,7 @@ const HomeLayout = () => {
           <MakingProcessContainer />
         </motion.div>
       </div>
-      <div className="max-w-[900px] mx-auto py-40">
+      <div className="max-w-[900px] mx-auto py-10 md:py-20">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

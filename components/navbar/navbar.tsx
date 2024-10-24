@@ -3,10 +3,11 @@ import React from "react";
 import icon from "@/public/icons/ploonet-icon.svg";
 import globeIcon from "@/public/icons/globe-icon.svg";
 import { MobileNavbarSheet } from "./mobile-navbar-sheet";
+
 const NavbarComponent = () => {
   return (
-    <nav className="fixed top-0 w-full bg-black backdrop-blur-sm z-50 ">
-      <div className="hidden  xl:flex items-center justify-around py-7 ">
+    <nav className="fixed top-0 w-full bg-black backdrop-blur-sm z-50">
+      <div className="hidden xl:flex items-center justify-around py-7">
         <Image src={icon} alt="icon" />
         <ol className="flex items-center gap-20">
           <li>스튜디오</li>
@@ -22,8 +23,7 @@ const NavbarComponent = () => {
           <Image src={globeIcon} alt="globeIcon" />
         </div>
       </div>
-      {/* mobile navbar */}
-      <div className="flex xl:hidden items-center justify-between  pt-16 pb-6 px-6 ">
+      <div className="flex xl:hidden items-center justify-between pt-4 pb-6 px-4">
         <Image src={icon} alt="icon" />
         <MobileNavbarSheet />
       </div>

@@ -22,7 +22,7 @@ const HeroSection = () => {
     >
       <Image
         src={heroImage}
-        className="h-[18rem]  md:h-[58rem] 2xl:w-screen  "
+        className="h-auto max-w-full md:h-[58rem] 2xl:w-screen"
         style={{
           aspectRatio: "470/278",
           objectFit: "cover",

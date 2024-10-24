@@ -5,11 +5,11 @@ import React from "react";
 
 const MakingProcessContainer = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-20">
+    <div className="relative flex flex-col items-center justify-center mt-20">
       <div className="flex justify-center mb-16">
         <TextWithDot title="MAKING PROCESS" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-h-[51rem]">
+      <div className="relative grid grid-cols-1 xl:grid-cols-2 gap-8 max-h-[51rem]">
         <PloonetFirstCardComponent />
         <PloonetQuickserveCardComponent />
       </div>
