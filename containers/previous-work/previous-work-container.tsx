@@ -1,5 +1,8 @@
+"use client";
+
 import TextWithDot from "@/components/text-with-dot";
 import { workImages } from "@/lib/mockdata";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -9,19 +12,23 @@ const PreviousWorkContainer = () => {
       <div className="flex justify-center mb-16">
         <TextWithDot title="PREVIOUS WORKS" />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4  bg-black ">
+      <motion.div className="grid grid-cols-2 md:grid-cols-4  bg-black ">
         {workImages?.map((work) => (
-          <div key={work.id} className="relative ">
+          <motion.div
+            whileHover={{ scale: 1.2, zIndex: 2 }}
+            key={work.id}
+            className="relative "
+          >
             <Image
-              className="w-[30rem] h-[16rem] object-cover"
+              className="w-[30rem] h-[16rem] object-cover hover:rounded-md"
               src={work?.image}
               quality={100}
               alt="image"
               placeholder="blur"
             />
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
