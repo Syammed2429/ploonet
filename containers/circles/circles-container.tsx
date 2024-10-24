@@ -1,3 +1,4 @@
+import FeatureCircles from "@/components/circles";
 import React from "react";
 
 const CirclesContainer = () => {
@@ -12,7 +13,9 @@ const CirclesContainer = () => {
         <span>을 받아보세요.</span>
       </div>
 
-      <div className="py-14">Circles</div>
+      <div>
+        <FeatureCircles />
+      </div>
       <h3 className="text-4xl font-bold leading-[2.8rem] py-6">
         AI VIDEO ON YOUR DEMAND
       </h3>
