@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import heroImage from "@/public/images/hero-image.svg";
 import crossDownArrow from "@/public/icons/cross-down-arrow.svg";
 import Image from "next/image";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   const [hovered, setHovered] = useState(false);
@@ -14,14 +14,15 @@ const HeroSection = () => {
     setMousePosition({ x: event.clientX, y: event.clientY });
   };
   return (
-    <div className="relative"
+    <div
+      className="relative w-full"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onMouseMove={handleMouseMove}
     >
       <Image
         src={heroImage}
-        className="h-[18rem] md:h-[58rem]   "
+        className="h-[18rem]  md:h-[58rem] 2xl:w-screen  "
         style={{
           aspectRatio: "470/278",
           objectFit: "cover",
@@ -33,7 +34,7 @@ const HeroSection = () => {
         <motion.div
           className="absolute z-10 hidden md:block"
           style={{
-            top: mousePosition.y - 100, 
+            top: mousePosition.y - 100,
             left: mousePosition.x - 100,
           }}
           initial={{ opacity: 0 }}
