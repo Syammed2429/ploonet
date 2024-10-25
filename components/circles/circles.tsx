@@ -85,10 +85,10 @@ export default function FeatureCircles() {
   };
 
   return (
-    <div className=" bg-black h-full sm:w-[28rem] md:w-full -mt-10 md:mt-0">
+    <div className=" bg-black h-full sm:w-[28rem] md:w-full my-4 md:my-12">
       <svg
         width="100%"
-        height="300"
+        height="200"
         viewBox="0 0 1200 300"
         preserveAspectRatio="xMidYMid meet"
       >
@@ -123,9 +123,10 @@ export default function FeatureCircles() {
               x="150"
               y="180"
               fontFamily="Arial, sans-serif"
-              fontSize="27"
+              fontSize="26"
               fill="url(#borderGradient)"
               textAnchor="middle"
+              opacity="0.7"
             >
               {circle.subtext}
             </text>

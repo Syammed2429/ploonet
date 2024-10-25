@@ -14,10 +14,10 @@ const CirclesContainer = () => {
         <span className="font-bold text-white">‘고품질 맞춤 영상’</span>
         <span>을 받아보세요.</span>
       </div>
-      <div className="md:my-6 ">
+      <div className="md:py-6 ">
         <FeatureCircles />
       </div>
-      <h3 className="text-lg md:text-4xl font-bold leading-[2.8rem] -mt-12 md:py-6">
+      <h3 className="text-lg md:text-4xl font-bold leading-[2.8rem]  md:py-6">
         AI VIDEO ON YOUR DEMAND
       </h3>
       <div className="flex flex-col gap-14 w-full max-w-[55rem] opacity-60 text-base md:text-lg">
