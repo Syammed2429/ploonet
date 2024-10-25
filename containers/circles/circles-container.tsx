@@ -4,21 +4,21 @@ import React from "react";
 const CirclesContainer = () => {
   return (
     <div className="max-w-[120rem] flex flex-col items-center text-center p-4">
-      <span className="bg-clip-text text-2xl leading-9 font-bold text-transparent bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]">
+      <span className="mb-8 bg-clip-text text-2xl leading-9 font-bold text-transparent bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]">
         영상 제작소
       </span>
-      <div className="flex items-center font-normal text-gray-400 text-[2.75rem]">
+      <div className="flex items-center font-normal  text-gray-400 text-base lg:text-[2.75rem]">
         <span>당장 내일</span>
         <span className="font-bold text-white">‘고품질 맞춤 영상’</span>
         <span>을 받아보세요.</span>
       </div>
-      <div>
+      <div className="md:my-16 ">
         <FeatureCircles />
       </div>
-      <h3 className="text-4xl font-bold leading-[2.8rem] py-6">
+      <h3 className="text-lg md:text-4xl font-bold leading-[2.8rem] py-6">
         AI VIDEO ON YOUR DEMAND
       </h3>
-      <div className="flex flex-col gap-14 w-full max-w-[55rem] opacity-60">
+      <div className="flex flex-col gap-14 w-full max-w-[55rem] opacity-60 text-base md:text-lg">
         <div>
           <p>
             가상인간 뿐 아니라 배경 이미지와 음악 생성 등 국내 최고의 생성 AI

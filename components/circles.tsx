@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function FeatureCircles() {
   const circleRadius = 148;
-  const strokeWidth = 2;
+  const strokeWidth = 3;
   const gapAngle = 3; 
 
   const gapRadians = (gapAngle * Math.PI) / 180;
@@ -76,15 +76,15 @@ export default function FeatureCircles() {
   };
 
   const circles = [
-    { name: "FAST", subtext: "X2", leftGap: true, rightGap: false },
+    { name: "FAST", subtext: "X2", leftGap: false, rightGap: true },
       { name: "QUALITY", subtext: "A++", leftGap: true, rightGap: true },
       { name: "LOW PRICE", subtext: "A++", leftGap: true, rightGap: true },
       { name: "HIGH TECH", subtext: "1/2", leftGap: true, rightGap: false },
   ];
 
   return (
-    <div className=" bg-black">
-      <svg width="100%" height="300" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
+    <div className=" bg-black h-full sm:w-[25rem] md:w-full -mt-7 md:mt-0">
+      <svg width="100%" height='200'  viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#FFBB54" />
@@ -93,8 +93,6 @@ export default function FeatureCircles() {
         </defs>
         
         {circles.map((circle, index) => (
-            // <g key={index} transform={`translate(${index * 300}, 0) ${index === circles.length - 1 ? 'rotate(180, 150, 150)' : ''}`}>
-
         <g key={index} transform={`translate(${index * 300}, 0)`}> 
             <path 
               d={createCirclePath(150, 150, circle.leftGap, circle.rightGap)} 
