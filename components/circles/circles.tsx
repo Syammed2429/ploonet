@@ -112,7 +112,7 @@ export default function FeatureCircles() {
               x="150"
               y="140"
               fontFamily="Arial, sans-serif"
-              fontSize="36"
+              fontSize="42"
               fontWeight="bold"
               fill="url(#borderGradient)"
               textAnchor="middle"
@@ -123,7 +123,7 @@ export default function FeatureCircles() {
               x="150"
               y="180"
               fontFamily="Arial, sans-serif"
-              fontSize="24"
+              fontSize="27"
               fill="url(#borderGradient)"
               textAnchor="middle"
             >
