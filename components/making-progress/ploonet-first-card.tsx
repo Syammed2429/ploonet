@@ -57,8 +57,8 @@ const RoundedCards: FC<RoundedCardsProps> = ({
 }) => {
   return (
     <div className="border rounded-[0.93rem] lg:rounded-[3.25rem] py-6 px-3 md:px-16 bg-black border-[#ffffff26] w-full">
-      <div className="flex gap-6 md:gap-16 ">
-        <div className="flex flex-col w-auto">
+      <div className="flex items-center justify-between w-auto gap-6 md:gap-16 ">
+        <div className="flex flex-col ">
           <GradientTextComponent
             title={stepName}
             className="text-xs md:text-base font-normal"
@@ -67,7 +67,7 @@ const RoundedCards: FC<RoundedCardsProps> = ({
             {title}
           </span>
         </div>
-        <div className="text-left text-xs  md:text-base  w-full text-[#AAAAAA] ">
+        <div className="text-xs md:text-base text-[#AAAAAA] ">
           <div>{description}</div>
           <div>{subText}</div>
         </div>
