@@ -5,46 +5,9 @@ import React from "react";
 import checkIcon from "@/public/icons/checked.svg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { mockData } from "@/lib/mockdata";
 
-const data = [
-  {
-    id: 1,
-    title: "영상 유형 선택",
-    showArrow: true,
-  },
-  {
-    id: 2,
-    title: "연락 받으실 담당자 성함",
-  },
-  {
-    id: 3,
-    title: "이메일",
-  },
-  {
-    id: 4,
-    title: "휴대폰 번호",
-  },
-  {
-    id: 5,
-    title: "의뢰하실 영상내용",
-    description: "아래 예시를 참고하셔서 이 중 편하신 내용을 기재해주세요.",
-    options: [
-      {
-        value: "1",
-        label: "고객님의 비즈니스 유형 : 관공서/일반기업/소상공인 등",
-      },
-      { value: "2", label: "영상 장르 : 홍보,프로모션/IR/프레젠테이션 등" },
-      {
-        value: "3",
-        label: "내용 : 제작하시고자 하는 영상의 내용을 간단히 기재해주세요.",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "참고 영상",
-  },
-];
+const {contactData} = mockData;;
 
 const ContactContainer = () => {
   return (
@@ -69,7 +32,7 @@ const ContactContainer = () => {
           </span>
         </div>
       </div>
-      {data?.map((data) => (
+      {contactData?.map((data) => (
         <div key={data?.id}>
           <ContactCard
             header={data?.title}
