@@ -11,18 +11,19 @@ import {
 import Image from "next/image";
 import downArrow from "@/public/icons/down-arrow.svg";
 import { mockData } from "@/lib/mockdata";
+import GradientTextComponent from "../dyanmic-reusable/gradient-text-component";
 
 export function PloonetFirstCardComponent() {
-
   const { makingProcessirstCardSteps } = mockData;
-
 
   return (
     <div className="w-full h-full">
       <Card className="bg-transparent lg:bg-[#141414] text-white border-0 lg:border-2 lg:border-[#ffffff26] p-0">
         <CardHeader className="text-center">
           <CardTitle className="text-xl md:text-5xl">일반 제작</CardTitle>
-          <CardDescription className="text-base md:text-lg">제작 시작 후 5영업일 이내</CardDescription>
+          <CardDescription className="text-base md:text-lg">
+            제작 시작 후 5영업일 이내
+          </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6 p-0 md:p-4">
           {makingProcessirstCardSteps?.map((step, index) => (
@@ -55,19 +56,20 @@ const RoundedCards: FC<RoundedCardsProps> = ({
   subText,
 }) => {
   return (
-    <div className=" flex flex-col items-center w-full">
-      <div className="border rounded-[0.93rem] lg:rounded-[3.25rem] py-6 px-3 md:px-16 bg-black border-[#ffffff26] w-full">
-        <div className="flex gap-6 md:gap-16 ">
-          <div className="flex flex-col w-auto">
-            <span className="text-xs md:text-base text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]">
-              {stepName}
-            </span>
-            <span className="text-nowrap text-base w-full md:text-lg">{title}</span>
-          </div>
-          <div className="text-left text-xs  md:text-base  w-full text-[#AAAAAA] ">
-            <div>{description}</div>
-            <div>{subText}</div>
-          </div>
+    <div className="border rounded-[0.93rem] lg:rounded-[3.25rem] py-6 px-3 md:px-16 bg-black border-[#ffffff26] w-full">
+      <div className="flex gap-6 md:gap-16 ">
+        <div className="flex flex-col w-auto">
+          <GradientTextComponent
+            title={stepName}
+            className="text-xs md:text-base font-normal"
+          />
+          <span className="text-nowrap text-base w-full md:text-lg">
+            {title}
+          </span>
+        </div>
+        <div className="text-left text-xs  md:text-base  w-full text-[#AAAAAA] ">
+          <div>{description}</div>
+          <div>{subText}</div>
         </div>
       </div>
     </div>

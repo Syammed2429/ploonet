@@ -2,8 +2,9 @@
 
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "./ui/separator";
+import { Separator } from "../ui/separator";
 import { mockData } from "@/lib/mockdata";
+import GradientTextComponent from "../dyanmic-reusable/gradient-text-component";
 
 export function PloonetQuickserveCardComponent() {
   const { makingProcessSecondCardSteps } = mockData;
@@ -18,10 +19,15 @@ export function PloonetQuickserveCardComponent() {
           <div className="w-full h-full bg-[#1c1c1c] rounded-[20px]" />
         </div>
         <CardHeader className="relative z-10 text-center">
-          <CardTitle className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]">
-            Ploonet Quickserve™
+          <CardTitle>
+            <GradientTextComponent
+              title="Ploonet Quickserve™"
+              className="text-3xl md:text-4xl font-bold "
+            />
           </CardTitle>
-          <p className="text-gray-400 md:text-white text-base md:text-lg mt-2">제작 시작 후 12~48시간 이내</p>
+          <p className="text-gray-400 md:text-white text-base md:text-lg mt-2">
+            제작 시작 후 12~48시간 이내
+          </p>
         </CardHeader>
         <CardContent className="relative z-10 space-y-6 py-[5.2rem]">
           {makingProcessSecondCardSteps.map((step, index) => (
@@ -37,7 +43,9 @@ export function PloonetQuickserveCardComponent() {
                   <p className="text-white font-medium text-lg md:text-2xl">
                     {step.description}
                   </p>
-                  <p className="text-gray-400 text-sm md:text-sm mt-2">{step.subtext}</p>
+                  <p className="text-gray-400 text-sm md:text-sm mt-2">
+                    {step.subtext}
+                  </p>
                 </div>
               </div>
               <div className="flex">

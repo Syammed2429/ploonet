@@ -1,6 +1,6 @@
 "use client";
 
-import TextWithDot from "@/components/text-with-dot";
+import TextWithDot from "@/components/dyanmic-reusable/text-with-dot";
 import { workImages } from "@/lib/mockdata";
 import { motion } from "framer-motion";
 import Image from "next/image";

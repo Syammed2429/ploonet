@@ -1,17 +1,16 @@
-
 import React from "react";
-import { PloonetFirstCardComponent } from "@/components/ploonet-first-card";
-import { PloonetQuickserveCardComponent } from "@/components/ploonet-quickserve-card";
-import TextWithDot from "@/components/text-with-dot";
+import { PloonetFirstCardComponent } from "@/components/making-progress/ploonet-first-card";
+import { PloonetQuickserveCardComponent } from "@/components/making-progress/ploonet-quickserve-card";
+import TextWithDot from "@/components/dyanmic-reusable/text-with-dot";
 const MakingProcessContainer = () => {
   return (
     <div className="mt-6 md:mt-20  md:space-y-10 ">
       <div className="text-center">
         <TextWithDot title="MAKING PROCESS" />
       </div>
-      <div className='flex flex-col xl:flex-row gap-6 xl:flex-grow h-full justify-center items-center xl:items-stretch '>
-      <PloonetFirstCardComponent />
-      <PloonetQuickserveCardComponent />
+      <div className="flex flex-col xl:flex-row gap-6 xl:flex-grow h-full justify-center items-center xl:items-stretch ">
+        <PloonetFirstCardComponent />
+        <PloonetQuickserveCardComponent />
       </div>
 
       <div className="text-center text-[0.62rem] md:text-sm text-gray-400 py-7">
@@ -24,8 +23,6 @@ const MakingProcessContainer = () => {
           있으며, 클라이언트와의 협의를 통해 작업 기간을 조정할 수 있습니다.
         </p>
       </div>
-
-
     </div>
   );
 };

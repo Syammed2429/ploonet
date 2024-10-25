@@ -1,5 +1,11 @@
 import React, { FC } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../ui/card";
 import chevronDown from "@/public/icons/chevron-down.svg";
 import Image from "next/image";
 interface Options {
@@ -25,7 +31,7 @@ const ContactCard: FC<ContactCardProps> = ({
         <CardHeader className="p-0 space-y-0 text-base md:text-lg">
           <CardTitle className="flex items-center justify-between text-base md:text-lg text-white  font-bold">
             <div className="opacity-60">{header}</div>
-            {showArrow && <Image src={chevronDown} alt="chvronDown" />}
+            {showArrow && <Image src={chevronDown} alt="chevron-down-icon" />}
           </CardTitle>
           <CardDescription className="text-white opacity-60 text-base md:text-lg">
             {description}

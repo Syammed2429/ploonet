@@ -1,12 +1,14 @@
-import FeatureCircles from "@/components/circles";
+import FeatureCircles from "@/components/circles/circles";
+import GradientTextComponent from "@/components/dyanmic-reusable/gradient-text-component";
 import React from "react";
 
 const CirclesContainer = () => {
   return (
     <div className="max-w-[120rem] flex flex-col items-center text-center p-4">
-      <span className="mb-8 bg-clip-text text-2xl leading-9 font-bold text-transparent bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]">
-        영상 제작소
-      </span>
+      <GradientTextComponent
+        title="영상 제작소"
+        className="text-2xl font-bold mb-8 "
+      />
       <div className="flex items-center font-normal z-10  text-gray-400 text-base lg:text-[2.75rem]">
         <span>당장 내일</span>
         <span className="font-bold text-white">‘고품질 맞춤 영상’</span>
