@@ -66,8 +66,7 @@ export const workImages = [
 
 
 export const mockData = {
-  navbarItems : [
-    
+  navbarItems: [
     {
       id: 1,
       title: "스튜디오<",
@@ -101,7 +100,7 @@ export const mockData = {
       title: "로그인",
     },
   ],
-  makingProcessirstCardSteps : [
+  makingProcessirstCardSteps: [
     {
       icon: FileText,
       stepName: "STEP1",
@@ -138,5 +137,26 @@ export const mockData = {
       description: "고객 피드백 반영하여 최종본 완성 및 납품",
       subText: "* 영상 수정 무료 1회 제공",
     },
-  ]
-}
+  ],
+  makingProcessSecondCardSteps : [
+    {
+      icon: FileText,
+      title: "STEP1",
+      description: "제작 안내",
+      subtext: "영상 제작 문의를 통해 의뢰 확인 후\n견적 및 진행 순서 안내",
+    },
+    {
+      icon: Play,
+      title: "STEP2",
+      description: "영상 생성",
+      subtext:
+        "스크립트 수신 즉시 가상인간 영상 생성\n그외 이미지, 배경 음악 등 필요 요소 생성",
+    },
+    {
+      icon: Video,
+      title: "STEP3",
+      description: "편집 및 납품",
+      subtext: "편집 진행, 12-48시간 내 최종본 완성 및 납품",
+    },
+  ],
+};

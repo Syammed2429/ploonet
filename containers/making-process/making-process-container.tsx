@@ -14,7 +14,7 @@ const MakingProcessContainer = () => {
       <PloonetQuickserveCardComponent />
       </div>
 
-      <div className="text-center text-gray-400 py-4 h-[20rem]">
+      <div className="text-center text-[0.62rem] md:text-sm text-gray-400 py-7">
         <p>
           * 2~3분, 표준 견적에 따르는 일반 영상편집에 한정되며, 모션그래픽 등
           전문 작업이 필요할 경우 작업 기간은 조정될 수 있습니다.

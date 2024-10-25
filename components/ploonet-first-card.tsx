@@ -24,7 +24,7 @@ export function PloonetFirstCardComponent() {
           <CardTitle className="text-xl md:text-5xl">일반 제작</CardTitle>
           <CardDescription className="text-base md:text-lg">제작 시작 후 5영업일 이내</CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6 p-0 md:p-10">
+        <CardContent className="space-y-6 p-0 md:p-4">
           {makingProcessirstCardSteps?.map((step, index) => (
             <div className="w-full 2xl:w-[37rem]" key={step.stepName}>
               <div className="flex flex-col items-center">
