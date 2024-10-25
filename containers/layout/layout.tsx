@@ -31,7 +31,7 @@ const HomeLayout = () => {
       >
         <PreviousWorkContainer />
       </motion.div>
-      <div className="mx-auto max-w-[1300px] px-4 md:px-8 pb-4 pt-8">
+      <div className="mx-auto max-w-[1300px] px-2 md:px-8 pb-4 pt-8">
         <motion.div
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}

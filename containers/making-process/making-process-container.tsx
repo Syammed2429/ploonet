@@ -5,7 +5,7 @@ import { PloonetQuickserveCardComponent } from "@/components/ploonet-quickserve-
 import TextWithDot from "@/components/text-with-dot";
 const MakingProcessContainer = () => {
   return (
-    <div className=" mt-20  space-y-10 ">
+    <div className="mt-6 md:mt-20  md:space-y-10 ">
       <div className="text-center">
         <TextWithDot title="MAKING PROCESS" />
       </div>
