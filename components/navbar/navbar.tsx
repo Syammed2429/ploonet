@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import React, { useState } from "react";
@@ -14,19 +14,19 @@ const NavbarComponent = () => {
 
   return (
     <nav className="fixed top-0 w-full bg-black backdrop-blur-sm z-50">
-      <div className="hidden xl:flex items-center justify-around py-7 px-5">
+      <div className="hidden xl:flex items-center justify-around text-nowrap  py-7 px-5">
         <Image src={icon} alt="icon" />
         <ol className="flex items-center gap-20">
           {navbarItems?.map((item, index) => (
-            <li 
-              key={item.id} 
-              className="relative hover:cursor-pointer"
-              onMouseEnter={() => setHoveredIndex(index)} 
+            <li
+              key={item.id}
+              className="relative hover:cursor-pointer xl:w-6"
+              onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
               {item.title}
               {hoveredIndex === index && (
-                <motion.div 
+                <motion.div
                   className="bg-gradient-to-r from-[#FF4E83] to-[#FFBB54] w-2 md:w-4 h-2 md:h-4 rounded-full absolute left-1/2 transform -translate-x-1/2 mt-1"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
