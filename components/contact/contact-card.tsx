@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import chevronDown from "@/public/icons/chevron-down.svg";
 import Image from "next/image";
 interface Options {
@@ -31,7 +31,7 @@ const ContactCard: FC<ContactCardProps> = ({
             {description}
           </CardDescription>
         </CardHeader>
-        <CardDescription>
+        <CardContent className="p-0">
           {options?.length && (
             <div className="pb-16 mt-6 text-white opacity-60 text-lg">
               {options?.map((option: Options) => (
@@ -41,7 +41,7 @@ const ContactCard: FC<ContactCardProps> = ({
               ))}
             </div>
           )}
-        </CardDescription>
+        </CardContent>
       </Card>
     </div>
   );

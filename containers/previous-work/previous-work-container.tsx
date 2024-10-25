@@ -12,7 +12,7 @@ const PreviousWorkContainer = () => {
       <div className="flex justify-center mb-16">
         <TextWithDot title="PREVIOUS WORKS" />
       </div>
-      <motion.div className="grid grid-cols-2 md:grid-cols-4  bg-black ">
+      <motion.div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 bg-black">
         {workImages?.map((work) => (
           <motion.div
             whileHover={{ scale: 1.2, zIndex: 2 }}
@@ -20,7 +20,7 @@ const PreviousWorkContainer = () => {
             className="relative "
           >
             <Image
-              className="w-[30rem] h-[16rem] object-cover hover:rounded-md"
+              className="w-full h-24  md:w-[30rem] md:h-[16rem] object-cover hover:rounded-md"
               src={work?.image}
               quality={100}
               alt="image"

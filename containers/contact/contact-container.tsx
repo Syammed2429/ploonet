@@ -48,7 +48,6 @@ const data = [
 
 const ContactContainer = () => {
   return (
-    <div>
       <div className="space-y-6">
         {data?.map((data) => (
           <div key={data?.id}>
@@ -77,7 +76,6 @@ const ContactContainer = () => {
           </Button>
         </div>
       </div>
-    </div>
   );
 };
 

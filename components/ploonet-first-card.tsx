@@ -59,9 +59,9 @@ export function PloonetFirstCardComponent() {
           <CardTitle>일반 제작</CardTitle>
           <CardDescription>제작 시작 후 5영업일 이내</CardDescription>
         </CardHeader>
-        <CardContent className="flex flex-col flex-grow  space-y-6">
+        <CardContent className="space-y-6">
           {steps?.map((step, index) => (
-            <div className="w-[37rem]" key={step.stepName}>
+            <div className="w-full 2xl:w-[37rem]" key={step.stepName}>
               <div className="flex flex-col items-center  ">
                 <RoundedCards {...step} />
                 {index < steps?.length - 1 && (
@@ -90,8 +90,8 @@ const RoundedCards: FC<RoundedCardsProps> = ({
   subText,
 }) => {
   return (
-    <div className=" flex flex-col  items-center">
-      <div className="border rounded-[3.25rem] py-6 px-16 bg-black border-[#ffffff26]">
+    <div className=" flex flex-col items-center w-full">
+      <div className="border rounded-[3.25rem] py-6 px-16 bg-black border-[#ffffff26] w-full">
         <div className="flex gap-16 ">
           <div className="flex flex-col ">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]">

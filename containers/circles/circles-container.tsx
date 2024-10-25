@@ -3,7 +3,7 @@ import React from "react";
 
 const CirclesContainer = () => {
   return (
-    <div className="max-w-[120rem] flex flex-col items-center text-center ">
+    <div className="max-w-[120rem] flex flex-col items-center text-center p-4">
       <span className="bg-clip-text text-2xl leading-9 font-bold text-transparent bg-gradient-to-r from-[#FF4E83] to-[#FFBB54]">
         영상 제작소
       </span>
@@ -12,14 +12,13 @@ const CirclesContainer = () => {
         <span className="font-bold text-white">‘고품질 맞춤 영상’</span>
         <span>을 받아보세요.</span>
       </div>
-
       <div>
         <FeatureCircles />
       </div>
       <h3 className="text-4xl font-bold leading-[2.8rem] py-6">
         AI VIDEO ON YOUR DEMAND
       </h3>
-      <div className="flex flex-col gap-14 w-[41rem] opacity-60">
+      <div className="flex flex-col gap-14 w-full max-w-[55rem] opacity-60">
         <div>
           <p>
             가상인간 뿐 아니라 배경 이미지와 음악 생성 등 국내 최고의 생성 AI
@@ -38,7 +37,7 @@ const CirclesContainer = () => {
           </p>
         </div>
         <div
-          className="bg-white max-w-[55rem]  h-[0.15rem] opacity-40"
+          className="bg-white h-[0.15rem] opacity-40"
           style={{
             background:
               "linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 53.75%, rgba(255, 255, 255, 0.00) 100%)",
