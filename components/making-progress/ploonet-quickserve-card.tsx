@@ -11,7 +11,7 @@ export function PloonetQuickserveCardComponent() {
 
   return (
     <div className="w-full h-full">
-      <Card className="bg-[#1c1c1c] border-0 overflow-hidden relative rounded-2xl py-11">
+      <Card className="bg-[#1c1c1c] border-0 overflow-hidden relative rounded-2xl xl:py-16 2xl:py-11">
         <div
           className="absolute inset-0 bg-gradient-to-br from-[#FF4E83] to-[#FFBB54] rounded-2xl"
           style={{ padding: "2px" }}
@@ -29,7 +29,7 @@ export function PloonetQuickserveCardComponent() {
             제작 시작 후 12~48시간 이내
           </p>
         </CardHeader>
-        <CardContent className="relative z-10 space-y-6 py-[5.2rem]">
+        <CardContent className="relative z-10 space-y-6 xl:py-[6.5rem] 2xl:py-[5.2rem]">
           {makingProcessSecondCardSteps.map((step, index) => (
             <div key={index} className="flex flex-col">
               <div className="flex items-center">
