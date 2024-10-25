@@ -159,4 +159,49 @@ export const mockData = {
       subtext: "편집 진행, 12-48시간 내 최종본 완성 및 납품",
     },
   ],
+     circles : [
+    { name: "FAST", subtext: "X2", leftGap: false, rightGap: true },
+      { name: "QUALITY", subtext: "A++", leftGap: true, rightGap: true },
+      { name: "LOW PRICE", subtext: "1/2", leftGap: true, rightGap: true },
+      { name: "HIGH TECH", subtext: "Gen Ai", leftGap: true, rightGap: false },
+  ],
+  contactData : [
+  {
+    id: 1,
+    title: "영상 유형 선택",
+    showArrow: true,
+  },
+  {
+    id: 2,
+    title: "연락 받으실 담당자 성함",
+  },
+  {
+    id: 3,
+    title: "이메일",
+  },
+  {
+    id: 4,
+    title: "휴대폰 번호",
+  },
+  {
+    id: 5,
+    title: "의뢰하실 영상내용",
+    description: "아래 예시를 참고하셔서 이 중 편하신 내용을 기재해주세요.",
+    options: [
+      {
+        value: "1",
+        label: "고객님의 비즈니스 유형 : 관공서/일반기업/소상공인 등",
+      },
+      { value: "2", label: "영상 장르 : 홍보,프로모션/IR/프레젠테이션 등" },
+      {
+        value: "3",
+        label: "내용 : 제작하시고자 하는 영상의 내용을 간단히 기재해주세요.",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "참고 영상",
+  },
+]
 };

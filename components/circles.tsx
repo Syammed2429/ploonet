@@ -1,8 +1,10 @@
 "use client"
 
+import { mockData } from '@/lib/mockdata';
 import React from 'react'
 
 export default function FeatureCircles() {
+  const {circles} = mockData;
   const circleRadius = 148;
   const strokeWidth = 3;
   const gapAngle = 3; 
@@ -75,16 +77,11 @@ export default function FeatureCircles() {
     return path;
   };
 
-  const circles = [
-    { name: "FAST", subtext: "X2", leftGap: false, rightGap: true },
-      { name: "QUALITY", subtext: "A++", leftGap: true, rightGap: true },
-      { name: "LOW PRICE", subtext: "A++", leftGap: true, rightGap: true },
-      { name: "HIGH TECH", subtext: "1/2", leftGap: true, rightGap: false },
-  ];
+
 
   return (
-    <div className=" bg-black h-full sm:w-[25rem] md:w-full -mt-7 md:mt-0">
-      <svg width="100%" height='200'  viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
+    <div className=" bg-black h-full sm:w-[28rem] md:w-full -mt-10 md:mt-0">
+      <svg width="100%" height='300'  viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#FFBB54" />
