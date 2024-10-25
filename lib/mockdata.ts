@@ -61,3 +61,43 @@ export const workImages = [
     image: image12,
   },
 ];
+
+
+
+export const mockData = {
+  navbarItems : [
+    
+    {
+      id: 1,
+      title: "스튜디오<",
+    },
+    {
+      id: 2,
+      title: "워크센터<",
+    },
+    {
+      id: 3,
+      title: "손비서<",
+    },
+    {
+      id: 4,
+      title: "메타휴먼<",
+    },
+    {
+      id: 5,
+      title: "영상제작소<",
+    },
+    {
+      id: 6,
+      title: "공지사항",
+    },
+    {
+      id: 7,
+      title: "제휴문의",
+    },
+    {
+      id: 8,
+      title: "로그인",
+    },
+  ]
+}

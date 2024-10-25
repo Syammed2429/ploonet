@@ -1,8 +1,8 @@
+
+import React from "react";
 import { PloonetFirstCardComponent } from "@/components/ploonet-first-card";
 import { PloonetQuickserveCardComponent } from "@/components/ploonet-quickserve-card";
 import TextWithDot from "@/components/text-with-dot";
-import React from "react";
-
 const MakingProcessContainer = () => {
   return (
     <div className=" mt-20  space-y-10 ">
