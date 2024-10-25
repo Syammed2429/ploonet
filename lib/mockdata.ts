@@ -10,6 +10,7 @@ import image9 from "@/public/images/09.jpg";
 import image10 from "@/public/images/10.jpg";
 import image11 from "@/public/images/11.jpg";
 import image12 from "@/public/images/12.jpg";
+import { FileText, Play, Video } from "lucide-react";
 
 export const workImages = [
   {
@@ -98,6 +99,44 @@ export const mockData = {
     {
       id: 8,
       title: "로그인",
+    },
+  ],
+  makingProcessirstCardSteps : [
+    {
+      icon: FileText,
+      stepName: "STEP1",
+      title: "사전 논의",
+      description: "스토리보드 전달&수정을 통한 기획안 확정",
+
+      subText: "상담을 통해 방향 설정 및 내용 협의",
+    },
+    {
+      icon: Play,
+      stepName: "STEP2",
+      title: "영상 기획",
+      description: "스토리보드 전달&수정을 통한 기획안 확정",
+      subText: "가상인간 발화용 스크립트 작성과 프롬프팅",
+    },
+    {
+      icon: Video,
+      stepName: "STEP3",
+      title: "영상 생성",
+      description: "작성한 스크립트로 가상인간 영상 생성",
+      subText: "그외 이미지, 배경 음악 등 필요 요소 생성",
+    },
+    {
+      icon: Video,
+      stepName: "STEP4",
+      title: "영상 편집",
+      description: "영상 전문가의 편집, 디자인, 후반 작업 단계",
+      subText: "필요시 실사 촬영 병행하여 편집본 완성",
+    },
+    {
+      icon: Video,
+      stepName: "STEP5",
+      title: "최종 납품",
+      description: "고객 피드백 반영하여 최종본 완성 및 납품",
+      subText: "* 영상 수정 무료 1회 제공",
     },
   ]
 }
